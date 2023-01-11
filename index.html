@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your budget</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/38b70dc5c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page">
+    <h1 style="text-align: center; font-size: 28px; color: rgb(10, 117, 81); font-weight: 1000;">Budget Tracker</h1>
+        <div class="container">
+          <div class="s-container">
+            <div class="t-amount">
+              <h1>Budget</h1>
+              <input type="number" id="budget-set" placeholder="Enter Amount"/>
+              <button class="submit" id="set-amount">Set Budget</button>
+            </div>
+            <div class="costs">
+              <h1>Expense</h1>
+              <input type="text" id="product-name" placeholder="Enter name"/>
+              <input type="number" id="product-cost" placeholder="$0.00"/>
+              <button class="submit" id="add-amount">Add Amount</button>
+            </div>
+          </div>
+          <div class="list">
+            <h1>Expenses</h1>
+            <div class="list-container" id="list"></div>
+          </div>
+          <div class="output flex-space">
+            <div>
+              <h1 style="color: rgba(44, 148, 113)" >Total</h1>
+              <span id="amount">0</span>
+            </div>
+            <div>
+              <h1 style="color: rgba(44, 148, 113)">Expenditure</h1>
+              <span id="expenditure">0</span>
+            </div>
+            <div>
+              <h1 style="color: rgba(44, 148, 113)">Available</h1>
+              <span id="balance">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
